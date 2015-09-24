@@ -22,7 +22,7 @@ class Producto
         if($id!= null){
             $q = new Query('producto','id','=',$id);
             $q->select(1);
-            $p = $this->db->traer($q);
+            $p = $this->db->traer($q->dar());
             $p = $p[0];
 
             $this->precio       = $p['precio'];
