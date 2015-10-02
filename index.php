@@ -1,8 +1,8 @@
 <?php
 
 include_once('autoload.php');
+$controller = !isset($_GET['controller']) ? 'Home' : $_GET['controller'] ;
+$metodo = !isset($_GET['metodo']) ? 'index' : $_GET['metodo'] ;
 
-$home = new Pagina('home');
-$home->titulo = 'Tarquinio - Home';
-
-echo $home->dibujar();
+$obj = new $controller;
+$obj->$metodo();
