@@ -1,11 +1,9 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: agus
- * Date: 02/10/15
- * Time: 17:30
- */
+namespace Controllers\Controller;
+
+
+
 class Controller
 {
     public $pagina;

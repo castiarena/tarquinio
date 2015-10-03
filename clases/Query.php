@@ -1,11 +1,7 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: agus
- * Date: 12/09/15
- * Time: 14:57
- */
+namespace Querys;
+
 class Query
 {
     private $tabla;

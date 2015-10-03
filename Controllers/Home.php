@@ -1,11 +1,10 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: agus
- * Date: 02/10/15
- * Time: 17:31
- */
+namespace Controller\Home;
+
+use Controllers\Controller as Controller;
+use
+
 class Home extends Controller
 {
     protected function init(){

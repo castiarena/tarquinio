@@ -1,4 +1,9 @@
 <?php
+
+namespace Templates\Pagina;
+
+use Templates\Template;
+
 class Pagina {
 
     public $content;

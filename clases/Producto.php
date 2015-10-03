@@ -1,11 +1,10 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: agus
- * Date: 03/09/15
- * Time: 00:58
- */
+namespace Producto;
+
+use Db\Db;
+use Querys\Query;
+
 class Producto
 {
     public $id;

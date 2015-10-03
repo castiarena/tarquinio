@@ -1,11 +1,7 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: agus
- * Date: 11/09/15
- * Time: 00:29
- */
+namespace Db;
+
 class Db
 {
     private $servidor;
