@@ -1,7 +1,5 @@
 <?php
 
-namespace Querys;
-
 class Query
 {
     private $tabla;

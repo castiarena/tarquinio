@@ -1,9 +1,5 @@
 <?php
 
-namespace Controllers\Controller;
-
-
-
 class Controller
 {
     public $pagina;

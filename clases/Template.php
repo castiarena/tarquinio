@@ -1,7 +1,5 @@
 <?php
 
-namespace Templates;
-
 class Template {
     public $pagina;
     public $layout;

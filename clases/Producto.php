@@ -1,9 +1,6 @@
 <?php
 
-namespace Producto;
 
-use Db\Db;
-use Querys\Query;
 
 class Producto
 {

@@ -1,2 +1,2 @@
-#RewriteEngine On
-#RewriteRule ^local.dev/tarquinio/(.*)/(.*)$ index.php?controller=$1&metodo=$2 [L]
+RewriteEngine On
+RewriteRule ^(.*)/(.*)$ index.php?controller=$1&metodo=$2 [L]

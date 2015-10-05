@@ -1,7 +1,5 @@
 <?php
 
-namespace Db;
-
 class Db
 {
     private $servidor;
