@@ -1,0 +1,37 @@
+{
+  "name": "tarquinio",
+  "version": "0.0.0",
+  "description": "Web site de alquiler de departamento",
+  "main": "index.js",
+  "dependencies": {
+    "grunt-contrib-htmlmin": "~0.6.0",
+    "grunt": "~0.4.5",
+    "grunt-shell": "~1.1.2",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-contrib-uglify": "~0.11.0",
+    "grunt-contrib-concat": "~0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/castiarena/tarquinio.git"
+  },
+  "keywords": [
+    "delta",
+    "tigre",
+    "buenos",
+    "aires",
+    "argentina",
+    "php",
+    "node",
+    "javascript"
+  ],
+  "author": "Agustin Castiarena",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/castiarena/tarquinio/issues"
+  }
+}
