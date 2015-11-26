@@ -4,8 +4,10 @@ module.exports  = function(grunt){
             shell:{
                 dist:{
                     command:[
-                        'mkdir -p dist', 'mkdir -p dist/css', 'mkdir -p dist/js',
-                        'cp src/css/* dist/css'
+                        'mkdir -p dist',
+                        'mkdir -p dist/css',
+                        'mkdir -p dist/js',
+                        'mkdir -p dist/img'
                     ].join('&&')
                 }
             },
@@ -16,7 +18,8 @@ module.exports  = function(grunt){
                 dist: {
                     src: [
                         'bower_components/angular/angular.js',
-                        'bower_components/jquery/dist/jquery.js'
+                        'bower_components/jquery/dist/jquery.js',
+                        'src/js/app.js'
                     ],
                     dest: 'dist/js/sitio.js'
                 }
@@ -24,18 +27,42 @@ module.exports  = function(grunt){
             uglify:{
                 javascript: {
                     files: {
-                        'dist/js/landing.min.js': 'dist/js/landing.js'
+                        'dist/js/sitio.min.js': 'dist/js/sitio.js'
                     },
                     options: {
                         mangle: false
                     }
                 }
+            },
+            sass:{
+                options: {
+                    style: 'compressed'
+                },
+                dist: {
+                    files: {
+                        'src/css/style.min.css': 'src/sass/style.scss'
+                    }
+                }
+            },
+            htmlmin:{
+                compile:{
+                    options: {
+                        removeComments: true,
+                        collapseWhitespace: true
+                    },
+                    files:{
+                        'dist/index.html':'src/index.html'
+                    }
+                }
             }
         });
-        grunt.loadNpmTasks('grunt-contrib-uglify');
-        grunt.loadNpmTasks('grunt-shell');
-        grunt.loadNpmTasks('grunt-contrib-concat');
 
-        grunt.registerTask('prod', ['shell']);
-        grunt.registerTask('default', ['shell']);
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-shell');
+
+    grunt.registerTask('prod', ['shell']);
+    grunt.registerTask('default', ['shell:dist','htmlmin']);
 };

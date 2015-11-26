@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "grunt-contrib-htmlmin": "~0.6.0",
+    //buscar version "grunt-autoprefixer": "~",
+    // buscar version "grunt-contrib-sass": "~",
     "grunt": "~0.4.5",
     "grunt-shell": "~1.1.2",
     "grunt-contrib-jshint": "~0.11.3",
