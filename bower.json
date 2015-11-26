@@ -1,0 +1,25 @@
+{
+  "name": "tarquinio",
+  "description": "Web site de alquiler de departamento",
+  "main": "index.js",
+  "authors": [
+    "Agustin Castiarena"
+  ],
+  "license": "BSD-2-Clause",
+  "keywords": [
+    "delta",
+    "tigre",
+    "buenos",
+    "aires",
+    "argentina",
+    "php",
+    "node",
+    "javascript"
+  ],
+  "homepage": "https://github.com/castiarena/tarquinio",
+  "moduleType": [],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap-sass": "~3.3.6"
+  }
+}
