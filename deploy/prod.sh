@@ -1,0 +1,1 @@
+scp ../dist/* agu.castiarena.com@ssh.castiarena.com.ar:/www/castiarena.com/htdocs/tarquinio/
