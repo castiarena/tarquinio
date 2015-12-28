@@ -9,6 +9,12 @@ module.exports  = function(grunt){
                         'mkdir -p dist/js',
                         'mkdir -p dist/img'
                     ].join('&&')
+                },
+                font:{
+                    command:[
+                        'mkdir -p src/fonts',
+                        'cp bower_components/font-awesome/fonts/* src/fonts/'
+                    ].join('&&')
                 }
             },
             concat:{
@@ -64,5 +70,7 @@ module.exports  = function(grunt){
     grunt.loadNpmTasks('grunt-shell');
 
     grunt.registerTask('prod', ['shell']);
+    grunt.registerTask('dev', ['sass']);
+    grunt.registerTask('dev_font', ['shell:font']);
     grunt.registerTask('default', ['shell:dist','htmlmin']);
 };
