@@ -1,0 +1,33 @@
+.box{
+  display: block;
+  padding: 15px 0;
+  @include box-shadow(0 0 12px 0 rgba(darken($color-white,15%), .9));
+
+  &-default{
+    background-color: darken($color-white,10%);
+
+  }
+
+  &-rounded{
+    padding: 5%;
+    font-size:50px;
+    @include border-top-radius(50%);
+    @include border-bottom-radius(50%);
+  }
+
+
+  &-danger{
+    background-color: $color-red;
+    color: lighten($color-red,50%);
+  }
+
+  &-success{
+    background-color: lighten($color-green,40%);
+  }
+
+  &-info{
+    background-color: $color-cyan;
+    color: lighten($color-cyan,50%);
+
+  }
+}

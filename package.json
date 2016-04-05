@@ -3,17 +3,14 @@
   "version": "0.0.0",
   "description": "Web site de alquiler de departamento",
   "main": "index.js",
-  "dependencies": {
-    "grunt": "~0.4.5",
-    "grunt-autoprefixer": "^3.0.3",
-    "grunt-contrib-concat": "~0.5.1",
-    "grunt-contrib-htmlmin": "~0.6.0",
-    "grunt-contrib-jshint": "~0.11.3",
-    "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-uglify": "~0.11.0",
-    "grunt-shell": "~1.1.2"
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

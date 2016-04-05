@@ -1,5 +1,35 @@
 .header{
-  display: inline-block;
+  display: block;
   width: 100%;
-  background-color: #3e8f3e;
+  background-color: $color-green;
+  padding: 15px 0;
+  @include box-shadow(0 0 12px 0 rgba(0, 0, 0, .5));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:100;
+
+}
+
+.header-logo{
+  font-family: $logo-font;
+  margin: 0;
+  font-size:48px;
+  line-height: 48px;
+  color: $color-white;
+  span{
+    font-size: 13px;
+    display: block;
+    font-family: $font;
+    line-height: 12px;
+    padding: 0 0 0 83px;
+    margin: -8px 0 0 0;
+    font-weight:300;
+  }
+}
+
+.footer{
+  padding:25px 0;
+  border-top: 1px solid darken($color-green,40%);
+  background-color: darken($color-green,15%);
 }

@@ -1,0 +1,26 @@
+@mixin space($side, $step, $cant){
+  @for $i from 1 through $cant{
+    &-x#{$i}{
+      padding-#{$side}: #{$i * $step}px ;
+    }
+  }
+}
+
+$contain-step: 10;
+$contain-cant: 5;
+
+.contain{
+  &-big{
+    @include space(top, $contain-step * 5, $contain-cant);
+    @include space(bottom, $contain-step * 5, $contain-cant);
+
+  }
+  &-bottom{
+    @include space(bottom, $contain-step, $contain-cant);
+  }
+  &-top{
+    @include space(top, $contain-step, $contain-cant);
+
+  }
+
+}

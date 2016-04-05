@@ -1,0 +1,11 @@
+.bg{
+  &-banner{
+    background-size: cover;
+    &1{
+      background-image: url(../assets/bg1.jpg);
+    }
+    &2{
+      background-image: url(../assets/bg2.jpg);
+    }
+  }
+}

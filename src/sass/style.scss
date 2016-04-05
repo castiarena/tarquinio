@@ -1,6 +1,13 @@
 
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../bower_components/font-awesome/scss/font-awesome";
-
 @import "variables";
+@import "mixins-add";
+@import "fonts";
+@import "base";
+@import "layout";
+@import "bg";
 @import "header";
+@import "btn";
+@import "box";
+@import "carousel";

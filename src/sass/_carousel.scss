@@ -1,0 +1,30 @@
+.carousel{
+  &-direction{
+    display: block;
+    position: absolute;
+
+    font-size: 50px;
+    color: $color-white;
+    @include transition(all .2s linear);
+    top: 50%;
+    margin-top:-25px;
+
+    @include mobile(){
+      top: auto;
+      bottom: 20px;
+      margin-top:0;
+
+    }
+
+    &:hover{
+      color: darken($color-white,20%);
+    }
+
+    &-left{
+      left: 10px;
+    }
+    &-right{
+      right: 10px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+
+
+//Responsive Mixins:
+// uso:
+// @include device(){
+//    @content
+//}
+
+/**
+MOBILE
+*/
+@mixin mobile{
+  $max: $mobile-width-max - 1;
+  @media (min-width: #{$mobile-width-min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+/**
+TABLET
+*/
+@mixin tablet {
+  $max: $tablet-width-max - 1;
+  @media (min-width: #{$tablet-width-min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+/**
+DESKTOP
+*/
+@mixin desktop {
+  $max: $desktop-width-max - 1;
+  @media (min-width: #{$desktop-width-min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+/**
+WIDE SCREEN
+*/
+@mixin wide {
+  @media (min-width: #{$wide-width-min}) and (max-width: #{$wide-width-max})  {
+    @content;
+  }
+}
+
+/**
+* font generator
+*
+* $nombre: es la variante tipografica
+* $base: preseteada para buscar en el root la carpeta fonts/helvetica
+* return : mixed css para compilar fontface
+*/
+
+@mixin font($nombre){
+  $base: '../fonts/quincho_script';
+  font-family: '#{$nombre}';
+  src: url('#{$base}/#{$nombre}.eot');
+  src: local('☺'),
+  url('#{$base}/#{$nombre}.woff') format('woff'),
+  url('#{$base}/#{$nombre}.ttf') format('truetype'),
+  url('#{$base}/#{$nombre}.svg') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/**
+* font-face generator
+*
+* $nombre: es la variante tipografica
+* $base: preseteada para buscar en el root la carpeta fonts/helvetica
+* return : mixed css para compilar fontface
+*/
+
+@mixin font-face($nombre){
+  @font-face {
+    @include font($nombre);
+  }
+}
