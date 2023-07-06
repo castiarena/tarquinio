@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import tarquinioIso from './assets/tarquinio.svg'
 import { Theme, css } from '@emotion/react'
 
