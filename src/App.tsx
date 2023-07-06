@@ -1,15 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/tarquinio.svg'
+import tarquinioIso from './assets/tarquinio.svg'
+import { Theme, css } from '@emotion/react'
 
 function App() {
-    const [count, setCount] = useState(0)
+	const [count, setCount] = useState(0)
 
-    return (
-        <div>
-            <img src={reactLogo} />
-        </div>
-
-    )
+	return (
+		<div
+			css={({ color }: Theme) => css`
+				background-color: ${color.primary};
+			`}
+		>
+			<img src={tarquinioIso} />
+		</div>
+	)
 }
 
 export default App
