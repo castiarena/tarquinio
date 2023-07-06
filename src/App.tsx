@@ -3,8 +3,6 @@ import tarquinioIso from './assets/tarquinio.svg'
 import { Theme, css } from '@emotion/react'
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<div
 			css={({ color }: Theme) => css`
