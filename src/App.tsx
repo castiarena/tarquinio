@@ -1,16 +1,11 @@
-import tarquinioIso from './assets/tarquinio.svg'
-import { Theme, css } from '@emotion/react'
+import { Layout } from './layout'
 
 function App() {
-	return (
-		<div
-			css={({ color }: Theme) => css`
-				background-color: ${color.primary};
-			`}
-		>
-			<img src={tarquinioIso} />
-		</div>
-	)
+    return (
+        <Layout>
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto repellat commodi. Saepe minima totam dicta asperiores corporis aliquid mollitia sint porro dolores quas! Rerum molestiae voluptates fugit possimus maiores?</h1>
+        </Layout>
+    )
 }
 
 export default App

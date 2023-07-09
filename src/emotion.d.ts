@@ -2,11 +2,19 @@ import '@emotion/react'
 
 declare module '@emotion/react' {
 	export interface Theme {
-		color: {
+		colors: {
 			primary: string
-			positive: string
-			negative: string
+			contrast: string
+			orange: string
+			blue: string
+			white: string
+			black: string
+			gray: string
 		}
+    fonts: {
+      body: string
+      title: string
+    }
 	}
 }
 
