@@ -1,6 +1,6 @@
 import { Global, css } from '@emotion/react'
 
-export const ResetCSS = ({ }) => <Global styles={
+export const ResetCSS = () => <Global styles={
   ({ fonts }) => css`
 /*
 

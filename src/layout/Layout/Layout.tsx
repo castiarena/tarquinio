@@ -1,5 +1,6 @@
-import { PropsWithChildren } from "react"
-import { Header } from ".."
+import { PropsWithChildren } from 'react'
+import { Header } from '../Header'
+
 
 export const Layout = ({ children }: LayoutProps) => {
 
@@ -11,4 +12,4 @@ export const Layout = ({ children }: LayoutProps) => {
     </div>
 }
 
-type LayoutProps = PropsWithChildren<{}>
+type LayoutProps = PropsWithChildren<Record<string, unknown>>

@@ -1,4 +1,4 @@
-import '@emotion/react'
+import { SerializedStyles } from '@emotion/react'
 
 declare module '@emotion/react' {
 	export interface Theme {
@@ -11,20 +11,17 @@ declare module '@emotion/react' {
 			black: string
 			gray: string
 		}
-    fonts: {
-      body: string
-      title: string
-    }
+		fonts: {
+			body: string
+			title: string
+		}
 	}
 }
 
-// You are also able to use a 3rd party theme this way:
-import '@emotion/react'
-import { SerializedStyles } from '@emotion/react'
 import { LibTheme } from 'some-lib'
 
 declare module '@emotion/react' {
-	export interface Theme extends LibTheme {}
+	export type Theme = LibTheme
 }
 
 declare module 'react' {
