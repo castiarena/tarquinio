@@ -11,7 +11,7 @@ export const theme: Theme = {
 		gray: '#777D79',
 	},
 	fonts: {
-		body: '\'Open Sans\', sans-serif',
-		title: '\'Baloo 2\', sans-serif',
+		body: '"Open Sans", sans-serif',
+		title: '"Baloo 2", sans-serif',
 	},
 }
