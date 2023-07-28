@@ -1,15 +1,10 @@
-import { Layout } from './layout'
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes';
 
-function App() {
-	return (
-		<Layout>
-			<h1>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iusto repellat commodi. Saepe minima totam
-				dicta asperiores corporis aliquid mollitia sint porro dolores quas! Rerum molestiae voluptates fugit possimus
-				maiores?
-			</h1>
-		</Layout>
-	)
+export const App = () => {
+    return (
+        <RouterProvider router={router} />
+    )
 }
 
-export default App
+
