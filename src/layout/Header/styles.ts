@@ -18,15 +18,3 @@ export const header = ({ colors }: Theme) => css`
 	background: ${colors.white};
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `
-
-export const headerButton = ({ colors, fonts }: Theme) => css`
-	color: ${colors.primary};
-	font-weight: bold;
-	font-family: ${fonts.body};
-	padding: 12px 16px;
-	border-radius: 12px;
-	&:hover {
-		background-color: ${colors.primary}09;
-		cursor: pointer;
-	}
-`
