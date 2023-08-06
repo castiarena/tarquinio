@@ -4,7 +4,13 @@
 		"es2021": true,
 		"jest": true
 	},
-	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier",
+		"plugin:import/recommended"
+	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -19,7 +25,8 @@
 		"camelcase": "error",
 		"spaced-comment": "warn",
 		"quotes": ["error", "single"],
-		"no-duplicate-imports": "error",
+		// "no-duplicate-imports": "error",
+		"import/no-duplicates": ["error", { "considerQueryString": true, "prefer-inline": false }],
 		"react/no-unknown-property": ["error", { "ignore": ["css"] }]
 	},
 	"settings": {

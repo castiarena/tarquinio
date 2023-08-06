@@ -21,10 +21,10 @@ export const primary = (theme: Theme) => css`
 `
 export const secondary = (theme: Theme) => css`
 	${sharedButtonStyle(theme)};
-	background-color: ${theme.colors.orange};
-	color: ${theme.colors.white};
+	background-color: ${theme.colors.white};
+	color: ${theme.colors.contrast};
 	&:hover {
-		background-color: ${theme.colors.orange}CC;
+		background-color: ${theme.colors.white}CC;
 	}
 `
 export const link = ({ colors, fonts }: Theme) => css`

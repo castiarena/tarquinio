@@ -1,13 +1,27 @@
-import { formWrapper } from './styles'
+import { Button } from '../Button'
+import { formWrapper, formSearchInput } from './styles'
+import { useForm, SubmitHandler } from 'react-hook-form'
 
-export const SearchForm = ({ placeholder, value, onSubmit }: SearchFromProps) => {
-    <form css={formWrapper} onSubmit={onSubmit}>
-        <input placeholder={placeholder} value={value} />
-    </form>
+export const SearchForm = ({ placeholder, query, onSubmit }: SearchFromProps) => {
+    const { register, handleSubmit } = useForm<SearchFormValues>()
+
+    return (
+        <form css={formWrapper} onSubmit={handleSubmit(onSubmit)}>
+            <input css={formSearchInput} {...register('query', { value: query })} placeholder={placeholder} />
+            <Button kind="secondary" type="submit">Buscar</Button>
+        </form>
+    )
 }
 
+
 type SearchFromProps = {
-    onSubmit?: HTMLFormElement['onSubmit']
+    onSubmit: SearchFormSubmitHandler
     placeholder?: HTMLInputElement['placeholder']
-    value?: HTMLInputElement['value']
+    query?: string
+}
+
+export type SearchFormSubmitHandler = SubmitHandler<SearchFormValues>
+
+type SearchFormValues = {
+    query: string
 }
