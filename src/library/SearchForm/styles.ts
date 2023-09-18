@@ -4,7 +4,7 @@ export const formWrapper = ({ colors }: Theme) => css`
 	display: flex;
 	background-color: ${colors.primary};
 	padding: 8px;
-    gap: 8px;
+	gap: 8px;
 	border-radius: 12px;
 `
 
